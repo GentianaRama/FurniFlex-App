@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 20;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 50%;
+    height: 50%;
+    width: 50%;
+    border-radius: 5%;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+header img{
+    max-width: 20%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Product-specific styles */
+#products body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.companies {
+    margin: 20px; /* Add some bottom margin for spacing */
+    display: flex;
+    
+}
+
+.container {
+    max-width: 1000px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 15px; /* Add some padding to the container */
+    box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+.company {
+    background-color: #f9f9f9; /* Light gray background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the company div */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.company img{
+    width: 20%; /* Ensure images don't exceed their container */
+    height: 20%;
+    border-radius: 8px; /* Add rounded corners to images */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+.company h2{
+    color: #333; /* Dark text color */
+    margin-bottom: 10px; /* Add some bottom margin for spacing */
+}
+
+.company h3{
+    color: #777; /* Lighter text color */
+    margin-top: 0; /* Remove top margin */
+}
+
+.company p {
+    color: #555; /* Medium text color */
+    margin-bottom: 15px; /* Add some bottom margin for spacing */
+}
+
+.company a {
+    color: #007bff; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.company a:hover{
+    text-decoration: underline; /* Underline on hover */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.product img{
+    width: 50%;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
