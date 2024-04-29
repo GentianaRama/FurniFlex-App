@@ -36,24 +36,25 @@ nav ul li a:hover {
 main {
     padding: 20px;
 }
-
-.product {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin-bottom: 20px;
+/*About us start*/
+.aboutUs {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse the order of items */
+    align-items: center; /* Center vertically */
 }
 
-.product img {
-    max-width: 50%;
-    height: 50%;
-    width: 50%;
-    border-radius: 5%;
+.aboutUs img {
+    max-width: 40%; /* Adjust image width */
+    margin-left: 20px; /* Adjust spacing between image and text */
 }
 
-.product h3 {
-    margin-top: 10px;
+.aboutUs h3,
+.aboutUs p,
+.aboutUs button {
+    max-width: 50%; /* Adjust maximum width for text */
 }
 
+/*About us end*/
 footer {
     margin-top: 10px;
     background-color: #333;
