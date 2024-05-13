@@ -45,33 +45,31 @@ nav ul li a:hover {
 main {
     padding: 20px;
 }
-/*About us start*/
+/* About us start */
 .aboutUs {
     display: flex;
-    flex-direction: row-reverse; /* Reverse the order of items */
-    align-items: center; /* Center vertically */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
 }
 
 .aboutUs img {
-    max-width: 40%; /* Adjust image width */
-    margin-left: 20px; /* Adjust spacing between image and text */
+    max-width: 40%; /* Reduce image size */
+    margin: 10px 0; /* Add margin to top and bottom */
+}
+
+.aboutUs .top-right-img {
+    align-self: flex-end; /* Align to the end of the flex container (top-right) */
+}
+
+.aboutUs .bottom-left-img {
+    align-self: flex-start; /* Align to the start of the flex container (bottom-left) */
 }
 
 .aboutUs h3,
 .aboutUs p,
 .aboutUs button {
-    max-width: 50%; /* Adjust maximum width for text */
-}
-
-/*About us end*/
-footer {
-    margin-top: 10px;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    bottom: 0;
-    width: 100%;
+    max-width: 80%; /* Adjust maximum width for text */
 }
 
 /* Common styles */
@@ -148,7 +146,7 @@ footer {
 }
 
 .company {
-    background-color: #f9f9f9; /* Light gray background color */
+    background-color: #f9f9f9; /* Light background color */
     border-radius: 10px; /* Rounded corners */
     padding: 20px; /* Add padding inside the company div */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
