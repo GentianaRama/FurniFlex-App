@@ -26,8 +26,9 @@
             height: 100vh;
             margin: 0;
             padding: 0;
+            position: relative; /* Add position relative to body */
         }
-        <!--Kodi i shtuar-->
+
         body::before {
             content: '';
             position: absolute;
@@ -50,6 +51,8 @@
             max-width: 400px;
             width: 100%;
             text-align: center;
+            position: relative; /* Add position relative to contain z-index */
+            z-index: 1; /* Ensure the container appears above the blurry background */
         }
 
         .signup-container h2 {
