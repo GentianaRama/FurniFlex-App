@@ -4,185 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
-    <!-- ! font awesome icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- ! css file -->
+    <title>Login</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Custom styles -->
     <style>
-        /* font family */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-:root {
-    --back-color: #e6e7ee;
-    --shadow-clr: #b8b9be;
-    --green-clr: #040807;
-}
-body {
-    height: 100vh;
-    display: grid;
-    place-content: center;
-    color: #fff;
-    background: #e6e7ee;
-    font-family: 'Poppins';
-}
-.container {
-    position: relative;
-    width: 320px;
-    height: 300px; /*400px;*/
-    box-shadow: 2px 2px 2px #b8b9be99, -2px -2px 2px #fff9;
-    /*border-radius: 0px 0px 200px 200px;*/
-}
-h3 {
-    background: #515856;
-    padding: 7px;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.8em;
-}
-form {
-    padding: 20px;
-}
-.field {
-    display: flex;
-    height: 40px;
-    border: 1px solid #fff;
-    margin-bottom: 12px;
-}
-.field i {
-    width: 40px;
-    display: grid;
-    place-content: center;
-    background: #6f7171;
-}
-.field input {
-    width: 100%;
-    padding: 5px;
-    font-family: Poppins;
-    border: none;
-    outline: none;
-    background: transparent;
-    color: #444;
-}
-form a {
-    color: #4a4d4c;
-}
-.loginCircle {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, 15%);
-    width: 300px;
-    height: 165px;
-    border-radius: 0px 0px 150px 150px;
-}
-button {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    width: 50px;
-    height: 15px;
-    line-height: 2.5 !important;
-    background: transparent;
-    border: 35px solid transparent;
-    border-bottom-color: #6e7070;
-    border-top-width: 10px;
-    border-radius: 0px 0px 60px 60px;
-    box-sizing: content-box;
-    font-size: 1.5em;
-    color: #fff;
-    transition: 0.2s;
-}
-button:hover {
-    cursor: pointer;
-    color: #646766;
-    border-bottom-color: #FFF;
-}
-.loginCircle i {
-    cursor: pointer;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    display: grid;
-    place-content: center;
-    font-size: 1.5em;
-    box-shadow: 2px 2px 2px #b8b9be, -0.5px -0.5px 0px #fff, inset -2px -2px 5px #b8b9be, inset 1px 1px 2px #aaa2, inset 2px 2px 5px #fff;
-    border-radius: 50%;
-    border: 2px solid #eee;
-    transition: 0.2s;
-}
-.loginCircle i:hover {
-    box-shadow: 1px 1px 2px #b8b9be, -0.5px -0.5px 0px #fff, inset 2px 2px 5px #b8b9be, inset -1px -1px 3px #fff;
-    text-shadow: 1px 1px 1px #5559, -1px -1px 1px #fff9;
-}
-.loginCircle::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    width: 60%;
-    height: 60%;
-    border: 2px solid transparent;
-    border-bottom-color: #999;
-    border-radius: inherit;
-}
-.loginCircle::after {
-    content: 'OR';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    color: #777;
-}
-.fa-facebook-f {
-    color: #4267B2;
-    left: 17px;
-    top: 56px;
-}
-.fa-github {
-    color: #6e5494;
-    left: 166px;
-    top: 106px;
-}
-.fa-google {
-    color: #DB4437;
-    left: 81px;
-    top: 106px;
-}
-.fa-microsoft {
-    color: #00A4EF;
-    left: 230px;
-    top: 56px;
-}
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: relative; /* Add position relative to body */
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('images/MobileriaBinni.jpg'); /* Background image URL */
+            background-size: cover;
+            background-position: center;
+            filter: blur(10px); /* Add blur effect */
+            z-index: -1; /* Ensure the blurry background is behind the content */
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for better readability */
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            position: relative; /* Add position relative to contain z-index */
+            z-index: 1; /* Ensure the container appears above the blurry background */
+        }
+
+        .login-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .login-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .login-container form input[type="email"],
+        .login-container form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .login-container form input[type="email"]:focus,
+        .login-container form input[type="password"]:focus {
+            border-color: #555;
+        }
+
+        .login-container form button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container form button[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        .login-container p {
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .login-container p a {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .login-container p a:hover {
+            text-decoration: underline;
+        }
+
+        .login-container .logo {
+            margin-bottom: 20px;
+        }
+
+        .login-container .logo img {
+            max-width: 100px;
+            height: auto;
+        }
     </style>
 </head>
 <body>
-    
-    <div class="container">
-        <h3>login</h3>
-        <form action="">
-            <div class="field">
-                <i class="fa-solid fa-user"></i>
-                <input type="email" placeholder="Email or Phone">
-            </div>
-            <div class="field">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" placeholder="Password">
-            </div>
-           <a href="signup.html">Create new account </a></br>
-            <button class="fa-solid fa-check"></button>
-            <!-- <div class="loginCircle">
-                 icons 
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="fa-brands fa-google"></i>
-                <i class="fa-brands fa-microsoft"></i>
-            </div> -->
+    <div class="login-container">
+        <div class="logo">
+            <!-- Replace 'logo.png' with your actual logo image -->
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <h2>Welcome Back</h2>
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="password" name="password" placeholder="Your Password" required>
+            <button type="submit">Login</button>
         </form>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
     </div>
-
 </body>
 </html>
