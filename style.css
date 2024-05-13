@@ -51,6 +51,7 @@ main {
     flex-direction: column; /* Align items in a column */
     align-items: center; /* Center horizontally */
     text-align: center; /* Center text */
+    background-color: #b4b1b1;
 }
 
 .aboutUs img {
@@ -148,30 +149,30 @@ footer {
 
 .company {
     background-color: #f9f9f9; /* Light background color */
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Add padding inside the company div */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .company img{
-    width: 20%; /* Ensure images don't exceed their container */
+    width: 50%; /* Ensure images don't exceed their container */
     height: 20%;
     border-radius: 8px; /* Add rounded corners to images */
     margin-bottom: 10px; /* Add some bottom margin for spacing */
 }
 
 .company h2{
-    color: #333; /* Dark text color */
+    color: #000000; /* Dark text color */
     margin-bottom: 10px; /* Add some bottom margin for spacing */
 }
 
 .company h3{
-    color: #777; /* Lighter text color */
+    color: #000000; /* Lighter text color */
     margin-top: 0; /* Remove top margin */
 }
 
 .company p {
-    color: #555; /* Medium text color */
+    color: #000000; /* Medium text color */
     margin-bottom: 15px; /* Add some bottom margin for spacing */
 }
 
@@ -197,7 +198,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     padding: 5px 10px;
 }
 
@@ -210,7 +211,7 @@ main {
 }
 
 .product {
-    border: 1px solid #ccc;
+    border: 1px solid #ffffff;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -224,7 +225,7 @@ main {
 }
 
 footer {
-    background-color: #333;
+    background-color: #1f1e1e;
     color: #fff;
     text-align: center;
     padding: 20px 0;
